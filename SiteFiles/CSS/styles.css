@@ -1,0 +1,41 @@
+body header div{
+    text-align: center;
+}
+body{
+    background-color: #320f0f;
+    color: #9e6737;
+}
+main{
+    display: flex;
+    margin-top: 200px;
+    gap: 250px;
+    justify-content: center;
+}
+main ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+main li{
+    margin:10px 0;
+}
+main a{
+    color: #950404;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 1.25s ease-in, transform .25s ease-in-out;
+}
+main a:hover{
+    transform: scale(1.25);
+}
+main h2 {
+    color: #b58800;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

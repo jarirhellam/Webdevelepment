@@ -1,0 +1,30 @@
+body{
+    background-color: #5a2501;
+}
+body div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+main{
+    margin-top: 80px;
+}
+main a{
+    color: #708edb;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 1.25s ease-in, transform .2s ease-in-out;
+}
+main a:hover{
+    transform: scale(1.25);
+}
+main ul{
+    margin-top: 100px;
+    margin-left: 50px;
+    list-style-type: none;
+}
+main li{
+    margin: 10px;
+}
