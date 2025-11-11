@@ -1,0 +1,38 @@
+/* Basis styling voor de pagina */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+}
+
+/* h1-opmaak */
+h1 {
+    font-variant: small-caps;
+    background-color: red;
+}
+
+/* Hyperlink + icoontje via background image */
+a {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3233/3233490.png");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;     /* klein icoontje */
+    background-position: left center;
+    padding-left: 20px;             /* ruimte voor icoon */
+    text-decoration: underline;     /* ✅ onderlijnd */
+    color: darkblue;
+}
+
+/* Hover-effect */
+a:hover {
+    border: 2px solid darkblue;
+    padding-left: 18px;
+    text-decoration: underline;     /* ✅ ook bij hover onderlijnd */
+}
+
+
+/* Stippeltjesrand-klasse */
+.stippeltjesrand {
+    border: 1px dotted black;
+    padding: 4px;
+}

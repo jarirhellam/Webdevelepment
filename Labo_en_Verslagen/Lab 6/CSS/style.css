@@ -1,0 +1,26 @@
+/* Body styling */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+}
+
+/* h1 styling */
+h1 {
+    font-variant: small-caps;
+    background-color: red;
+}
+
+/* Link hover: kadertje rond de link */
+a:hover {
+    border: 2px solid darkblue;
+    padding: 2px;
+    text-decoration: none;
+}
+
+/* Stippeltjesrand klasse */
+.stippeltjesrand {
+    border: 1px dotted black;
+    padding: 4px;
+}
