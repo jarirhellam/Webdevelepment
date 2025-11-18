@@ -1,0 +1,160 @@
+/* ================= Algemene instellingen ================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Titels */
+h1 {
+    text-align: center;
+    color: #3245a8;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #3245a8;
+    margin-top: 30px;
+}
+
+/* Algemene secties (zoals info-boxes) */
+.info, li, p {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Lijsten op hobby-pagina */
+ul {
+    list-style-type: square;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* Sterke tekst */
+strong {
+    color: #3245a8;
+}
+
+/* Links */
+a {
+    color: #3245a8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #222d72;
+    text-decoration: underline;
+}
+
+/* Terug naar homepage links */
+body > a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #3245a8;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+body > a:hover {
+    background-color: #222d72;
+}
+
+/* Afbeeldingen op likes-pagina */
+p img {
+    display: block;
+    max-height: 250px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Navigatie (zoals op homepage) */
+.navigatie {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.navigatie a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 15px;
+    background-color: #3245a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navigatie a:hover {
+    background-color: #222d72;
+
+
+}
+
+.profiel-foto {
+    display: block;
+    width: 175px;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/* ================= Friends-pagina tabel ================= */
+
+/* Algemene tabelopmaak */
+.friends-table {
+    width: 90%;
+    max-width: 700px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Header van de tabel */
+.friends-table th {
+    background-color: #3245a8;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Normale cellen */
+.friends-table td {
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+/* Afwisselende rijkleur */
+.friends-table tr:nth-child(even) {
+    background-color: #f0f2ff;
+}
+
+/* Hover effect */
+.friends-table tr:hover {
+    background-color: #e4e8ff;
+    transition: 0.2s;
+}
