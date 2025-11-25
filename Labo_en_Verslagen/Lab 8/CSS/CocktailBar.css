@@ -1,0 +1,67 @@
+body{
+    width: 95%;
+    margin: auto;
+    font-family: Verdana, Helvetica, Arial, serif;
+    font-size: 1.2em ;
+}
+h1{
+    color: #007e7e;
+    font-size: 150%;
+}
+h2{
+    color: #007e7e;
+    font-size: 130%;
+}
+.leftsidedText{
+    width: 70%;
+}
+.weeklySpecials h1{
+    color: red;
+    font-size: 150%;
+    text-align: center;
+}
+.weeklySpecials h2{
+    color: darkred;
+    font-size: 130%;
+    text-align: center;
+}
+.weeklySpecials a:hover{
+    background-color: saddlebrown;
+}
+.weeklySpecials{
+    border:1px solid #007e7e;
+    float: right;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background-image: url("../fotos/cocktail.gif");
+    background-repeat: repeat-x;
+
+}
+#guarantee{
+    background-color: #a7cece;
+    margin: 30px;
+    padding: 20px;
+    color: rgb(44 44 44);
+    border: dotted white;
+    width: 70%;
+
+
+}
+#guarantee img{
+    float: left;
+}
+#guarantee div{
+    overflow: hidden;
+}
+header {
+    margin: auto;
+    width: 50%;
+
+}
+footer {
+    font-size: 50%;
+    margin: auto;
+    width: 50%;
+}

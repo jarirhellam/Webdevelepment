@@ -1,0 +1,66 @@
+div {
+    text-align:center;
+}
+
+.area {
+    width:100px;
+    height:100px;
+    background:red;
+    display:inline-block;
+}
+
+.tall {
+    height:150px;
+}
+
+.short {
+    height:50px;
+}
+
+.floaty{
+    float:left;
+    background:green;
+}
+
+.break {
+    clear:both;
+    background:blue;
+}
+
+.area {
+    height: 100px;
+    line-height: 100px; /* Zelfde als de height */
+}
+
+.tall {
+    height: 150px;
+    line-height: 150px;
+}
+
+.area {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+}
+
+.area {
+    display: flex;
+    align-items: center;     /* Verticaal */
+    justify-content: center; /* Horizontaal */
+}
+
+.area {
+    height:100px;
+}
+
+.tall {
+    height:150px;
+}
+
+.tall {
+    height:150px;
+}
+
+.area {
+    height:100px;
+}
