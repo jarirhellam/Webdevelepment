@@ -1,0 +1,23 @@
+/*
+Bij de even artikels worden de foto’s links geplaats, bij de oneven rechts.
+Gewenste lay-out:
+Er is een marge voorzien tussen de tekst en de foto van 10px, lettergrootte is 1.25 em. Tussen de
+artikels is er marge voorzien van 10px. Ook links en rechts is er een marge voorzien van 10px
+ */
+article{
+    font-size: 1.25em;
+    margin: 10px 5px 10px 5px;
+    border: 1px solid black;
+    display: inline-block;
+}
+img{
+    padding: 0 10px 10px 10px;
+
+}
+
+article:nth-child(odd)>p>img{
+    float: left;
+}
+article:nth-child(even)>p>img{
+    float: right;
+}
