@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container-fluid > div > div {
+    background: linear-gradient(45deg, #00e1ff 0%, #002160 50%, #aa00ff 100%);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+body {
+    width: 100%;
+
+}
+
+html {
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: radial-gradient(ellipse at top, #2B1B28 30%, #000000 90%);
+    color: #FBE8C8;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
