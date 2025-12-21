@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Kumbh";
+    src: url(../fonts/kumbh.ttf) format("truetype");
+}
+
+body {
+    font-size: 1.8em;
+    font-family: "Kumbh", sans-serif;
+    background: url('../fotos/bg-pattern-top.svg'), url('../fotos/bg-pattern-bottom.svg'), hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
+    min-block-size: 100vh;
+    margin: 0;
+
+    display: flex;                  /* Flexbox activeren op body */
+    justify-content: center;        /* Centreer section / card horizontaal */
+    align-items: center;            /* Centreer section / card verticaal */
+}
+
+/* Card styling en flex richting */
+.card {
+    display: flex;                  /* Flexbox op card */
+    flex-direction: column;         /* Stap 2: foto, naam, stats onder elkaar */
+    align-items: center;            /* Centreer alles horizontaal */
+    background: url('../fotos/bg-pattern-card.svg') no-repeat, white;
+    border-radius: .5em;
+    min-block-size: 25rem;
+    inline-size: 100%;
+    max-inline-size: 350px;
+}
+
+/* Wrapper van profielfoto bovenaan */
+.card .profile-picture-wrapper {
+    order: -1;                      /* Zet profielfoto boven andere elementen */
+    margin-block-start: 4.5em;
+}
+
+/* Header styling */
+.card header {
+    text-align: center;
+    border-block-end: 1px solid hsl(0, 0%, 59%);
+}
+
+.card header div {
+    display: inline-block;
+}
+
+/* Profielfoto cirkelvorm */
+.card img {
+    border-radius: 100%;
+    border: .25em solid white;
+}
+
+/* Naam bold */
+.name {
+    font-weight: bold;
+}
+
+/* Statistieken */
+.card .stats {
+    display: flex;                  /* Stap 3: horizontale weergave statistieken */
+    justify-content: space-around;   /* Verdeel stats gelijk over de breedte */
+    inline-size: 100%;
+    font-size: .75rem;
+    padding: 2em;
+}
+
+.stats {
+    color: hsl(0, 0%, 59%);
+}
+
+.stats .amount {
+    color: initial;
+    font-size: 1.25em;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.card .stats > * {
+    text-align: center;             /* Tekst gecentreerd in elk blokje */
+}
+
+/* Extra info */
+.age, .location {
+    color: hsl(0, 0%, 59%);
+}
+
+.location {
+    font-size: .75rem;
+}
