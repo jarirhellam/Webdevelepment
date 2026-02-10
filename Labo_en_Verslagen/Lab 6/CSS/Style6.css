@@ -10,7 +10,7 @@
 }
 .checklist li.checked{
     background-image: url("../fotos/checkbox.png");
-);
+
 }
 .checklist li:not(.checked){
     background-image: url("../fotos/uncheckbox.png");
