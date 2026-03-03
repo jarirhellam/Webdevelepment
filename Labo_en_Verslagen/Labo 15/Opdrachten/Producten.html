@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Producten</title>
+    <link rel="stylesheet" href="styles4.css">
+    <script src="script4.js"></script>
+</head>
+<body>
+
+<h1>Producten</h1>
+
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Prijs</th>
+        <th>BTW (%)</th>
+        <th>Aantal</th>
+        <th>Subtotaal</th>
+    </tr>
+
+    <tr>
+        <td>Product 1</td>
+        <td class="prijs">10.00 Eur</td>
+        <td class="btw">6</td>
+        <td><label>
+            <input type="number" class="aantal" value="0" min="0">
+        </label></td>
+        <td class="subtotaal">0.00</td>
+    </tr>
+
+    <tr>
+        <td>Product 2</td>
+        <td class="prijs">20.00 Eur</td>
+        <td class="btw">21</td>
+        <td><label>
+            <input type="number" class="aantal" value="0" min="0">
+        </label></td>
+        <td class="subtotaal">0.00</td>
+    </tr>
+
+</table>
+
+<br>
+
+<button id="herbereken">Herbereken</button>
+
+<p><strong>Totaal: € <span id="totaal">0.00</span></strong></p>
+
+</body>
+</html>

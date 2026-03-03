@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.kleurKnop {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* Kleuren */
+
+.blauw {
+    background-color: blue;
+    color: white;
+}
+
+.rood {
+    background-color: red;
+    color: white;
+}
+
+.groen {
+    background-color: green;
+    color: white;
+}
