@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Invulformulier</title>
+
+    <style>
+
+        body{
+            font-family: Arial,serif;
+        }
+
+        fieldset{
+            margin-bottom:15px;
+            padding:10px;
+        }
+
+        label{
+            display:inline-block;
+            width:180px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<form onsubmit="return controleerPostcode()">
+
+    <!-- Persoonlijke informatie -->
+
+    <fieldset>
+        <legend>Persoonlijke informatie</legend>
+
+        <label>Voornaam*:</label>
+        <label>
+            <input type="text" placeholder="Your first name" autofocus required>
+        </label>
+        <br>
+
+        <label>Familienaam*:</label>
+        <label>
+            <input type="text" placeholder="Your last name" required>
+        </label>
+
+    </fieldset>
+
+    <!-- Sport -->
+
+    <fieldset>
+        <legend>Sport</legend>
+
+        <p>Welke sport beoefen je?</p>
+
+        <label>
+            <input type="checkbox">
+        </label> Lopen<br>
+        <label>
+            <input type="checkbox">
+        </label> Zwemmen<br>
+        <label>
+            <input type="checkbox">
+        </label> Roeien
+
+    </fieldset>
+
+    <!-- Communicatie -->
+
+    <fieldset>
+        <legend>Communicatievoorkeur</legend>
+
+        <p>Hoe kunnen we je bereiken?</p>
+
+        <label>
+            <input type="radio" name="contact">
+        </label> Per post<br>
+        <label>
+            <input type="radio" name="contact">
+        </label> E-mail
+
+    </fieldset>
+
+    <!-- Favorieten -->
+
+    <fieldset>
+        <legend>Favorieten</legend>
+
+        <label>Favoriete film:</label>
+        <label>
+            <input type="text">
+        </label>
+        <br>
+
+        <label>Favoriete quote:</label>
+        <label>
+            <input type="text" placeholder="Schrijf je favoriete quote">
+        </label>
+        <br>
+
+        <label>Favoriete eten:</label>
+
+        <label>
+            <select>
+                <option>Hamburger</option>
+                <option>Hot-dog</option>
+                <option>Pizza</option>
+            </select>
+        </label>
+
+        <br>
+
+        <label>Favoriete browser:</label>
+        <label>
+            <input type="text">
+        </label>
+
+    </fieldset>
+
+    <!-- Beveiliging -->
+
+    <fieldset>
+        <legend>Beveiliging & contact</legend>
+
+        <label>Wachtwoord*:</label>
+        <label>
+            <input type="password" required>
+        </label>
+        <br>
+
+        <label>E-mailadres:</label>
+        <label>
+            <input type="email" placeholder="Geef je e-mailadres in">
+        </label>
+        <br>
+
+        <label>Favoriete site:</label>
+        <label>
+            <input type="url" placeholder="Geef de URL van je favoriete site">
+        </label>
+
+    </fieldset>
+
+    <!-- Extra info -->
+
+    <fieldset>
+        <legend>Extra informatie</legend>
+
+        <label>Favoriete getal tussen 1-10:</label>
+        <label>
+            <input type="number" min="1" max="10">
+        </label>
+        <br>
+
+        <label>Favoriete getal tussen 11-1000:</label>
+        <label>
+            <input type="range" min="11" max="1000">
+        </label>
+        <br>
+
+        <label>Wanneer ben je geboren?</label>
+        <label>
+            <input type="date">
+        </label>
+        <br>
+
+        <label>Belgische postcode*:</label>
+        <label for="postcode"></label><input type="text" id="postcode" maxlength="4" value="9999">
+
+    </fieldset>
+
+    <!-- Varia -->
+
+    <fieldset>
+        <legend>Varia</legend>
+
+        <label>Zoeken naar iets:</label>
+        <label>
+            <input type="search">
+        </label>
+        <br>
+
+        <label>Wat is je lievelingskleur?</label>
+        <label>
+            <input type="color">
+        </label>
+        <br>
+
+        <input type="file">
+
+    </fieldset>
+
+    <input type="submit">
+
+</form>
+
+<script>
+
+    function controleerPostcode(){
+
+        let postcode = document.getElementById("postcode").value;
+
+        if(!/^\d{4}$/.test(postcode)){
+            alert("Postcode moet 4 cijfers bevatten");
+            return false;
+        }
+
+        let nummer = parseInt(postcode);
+
+        if(nummer < 1000 || nummer > 9992){
+            alert("Postcode moet tussen 1000 en 9992 liggen");
+            return false;
+        }
+
+        return true;
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Spaties</title>
+</head>
+<body>
+
+<h3>Typ een woord</h3>
+
+<label for="tekst"></label><input type="text" id="tekst">
+<button onclick="toonSpaties()">Toon</button>
+
+<script>
+
+    function toonSpaties(){
+
+        let woord = document.getElementById("tekst").value;
+
+        let resultaat = "";
+
+        for(let i = 0; i < woord.length; i++){
+
+            resultaat = resultaat + woord[i] + " ";
+
+        }
+
+        console.log(resultaat);
+
+    }
+
+</script>
+
+</body>
+</html>
