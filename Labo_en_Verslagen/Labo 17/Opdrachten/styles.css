@@ -1,0 +1,8 @@
+.error {
+    color: red;
+    margin-left: 10px;
+}
+
+.fout {
+    border: 2px solid red;
+}
