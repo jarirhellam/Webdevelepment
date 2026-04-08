@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactmanager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Contactmanager</h2>
+
+<div class="container">
+
+    <!-- Lijst -->
+    <label for="personenLijst"></label><select id="personenLijst" size="10"></select>
+
+    <button onclick="nieuwPersoon()">Nieuw</button>
+
+    <!-- Formulier -->
+    <div class="form">
+        <label>Voornaam</label>
+        <label for="voornaam"></label><input type="text" id="voornaam">
+
+        <label>Familienaam</label>
+        <label for="familienaam"></label><input type="text" id="familienaam">
+
+        <label>Geboortedatum</label>
+        <label for="geboortedatum"></label><input type="date" id="geboortedatum">
+
+        <label>Email</label>
+        <label for="email"></label><input type="email" id="email">
+
+        <label># kinderen</label>
+        <label for="kinderen"></label><input type="number" id="kinderen">
+
+        <br><br>
+        <button onclick="bewaarPersoon()">Bewaren</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
