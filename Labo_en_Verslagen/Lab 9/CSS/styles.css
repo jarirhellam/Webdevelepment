@@ -43,7 +43,7 @@ h3 {
 }
 
 header {
-    background-image: url(../fotos/bgsky3.jpg);
+    background-image: ur    l(../fotos/bgsky3.jpg);
     position: relative;
     background-size: cover;
     grid-column: span 2;
